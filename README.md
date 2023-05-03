@@ -1,38 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini aplicación para escuchar podcasts musicales
 
-## Getting Started
+Este proyecto es una mini-aplicación para escuchar podcasts musicales. La aplicación cuenta con tres vistas: vista principal, detalles de un podcast y detalles de un capítulo de un podcast.
 
-First, run the development server:
+## Navegación
+ Tecnologías utilizadas
+La aplicación está desarrollada en Next.js, un framework de React que permite crear aplicaciones web de servidor y cliente.
+
+## Vistas
+### Vista principal
+En la vista principal se muestra una lista de los podcasts disponibles. Cada podcast cuenta con una imagen, un título y una breve descripción.
+
+### Detalles de un podcast
+En la vista de detalles de un podcast se muestra información más detallada sobre el podcast, incluyendo su imagen, título, descripción y una lista de los capítulos disponibles.
+
+### Detalles de un capítulo de un podcast
+En la vista de detalles de un capítulo de un podcast se muestra información más detallada sobre el capítulo, incluyendo su título, descripción y un reproductor para escuchar el episodio.
+
+## Navegación
+La navegación en la aplicación se realiza en el lado del cliente, sin refrescar completamente el documento principal en ningún momento.
+
+## Instalación
+
+Para instalar las dependencias del proyecto, se debe ejecutar el siguiente comando:
+
+```bash
+npm install
+```
+
+## Modos de desarrollo y producción
+La aplicación cuenta con dos modos: modo development y modo production. En modo development se sirven los assets sin minimizar, mientras que en modo production se sirven los assets concatenados y minimizados.
+
+Para ejecutar la aplicación en modo development, se debe utilizar el siguiente comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para ejecutar la aplicación en modo production, se debe utilizar el siguiente comando:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Issues
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Si encuentras algún error o tienes alguna sugerencia, puedes crear un issue en este repositorio.
