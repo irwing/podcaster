@@ -1,9 +1,8 @@
-const Title = () => {
-    return (
-        <div>
-            <h1>Test</h1>
-        </div>
-    )
-}
+import React from "react";
 
-export default Title
+// receive title from props how string
+const Title: React.FC<{ title: string }> = ({ title }) => {
+  return <h1>{title}</h1>;
+};
+
+export default Title;
