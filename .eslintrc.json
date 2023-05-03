@@ -1,4 +1,5 @@
 {
+  "plugins": ["jest"],
   "extends": [
     "next/core-web-vitals",
     "./node_modules/ts-standard/eslintrc.json"
