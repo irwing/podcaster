@@ -1,11 +1,10 @@
-// @ts-ignore
 import handler from '@api/hello'
 
 describe('hello api', () => {
   it('should return hello world', async () => {
-    const req: any = {}
+    const req = {}
 
-    const res: any = {
+    const res = {
       status: jest.fn().mockReturnThis(),
       json: jest.fn().mockReturnThis()
     }
@@ -14,5 +13,5 @@ describe('hello api', () => {
 
     expect(res.status).toHaveBeenCalledWith(200)
     expect(res.json).toHaveBeenCalledWith({ name: 'John Doe' })
-  });
-});
+  })
+})
